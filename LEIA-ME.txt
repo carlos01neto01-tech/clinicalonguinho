@@ -1,0 +1,28 @@
+CLÍNICA LONGUINHO — PACOTE PARA O GITHUB PAGES
+
+1. Extraia o ZIP e envie TODO o conteúdo para a raiz do repositório:
+   a pasta docs, o index.html da raiz e o arquivo .nojekyll.
+   Envie os arquivos extraídos, não apenas o ZIP.
+
+2. No GitHub: Settings > Pages > Deploy from a branch.
+   Selecione a branch com os arquivos (geralmente main), a pasta /docs
+   e clique em Save.
+
+O site completo está em docs/index.html.
+As imagens ficam em docs/assets. Preserve essa estrutura.
+HTML, estilos e interações estão reunidos no mesmo index.html.
+Não há instalação, compilação nem arquivo JSON para carregar.
+
+O index.html da raiz encaminha para o site caso a publicação ainda
+esteja configurada como / (root).
+
+Estrutura:
+index.html
+.nojekyll
+docs/
+  index.html
+  .nojekyll
+  assets/
+
+Configuração oficial:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
